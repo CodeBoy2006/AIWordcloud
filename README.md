@@ -2,7 +2,7 @@
 
 图形化词云图生成软件，整合了网络爬虫功能  
 
-UI使用PyQt5设计实现, `BeautifulSoup + Newspaper` 双模爬虫引擎,可根据网站内容方便切换。
+UI使用 `PyQt5` 设计实现, `BeautifulSoup` + `Newspaper` 双模爬虫引擎, 可根据网站内容方便切换, `jieba` 中文分词, `wordcloud` 生成词云图
 
 可以一键式生成 *~~专业品质~~* 的词云图  
 
