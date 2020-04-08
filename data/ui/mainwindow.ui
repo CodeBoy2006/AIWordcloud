@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1160</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1160</width>
+    <height>680</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1160</width>
+    <height>680</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>全自动词云图小程序</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">boder=2px</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <widget class="QLabel" name="Title1">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>30</y>
+      <width>651</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>楷体</family>
+      <pointsize>36</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>全自动词云图生成器</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Title2">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>90</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>楷体</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>By 官咏颉-20191209</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="URLEdit">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>150</y>
+      <width>351</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string comment="输入需要爬取的网站URL" extracomment="输入需要爬取的网站URL"/>
+    </property>
+    <property name="statusTip">
+     <string comment="输入需要爬取的网站URL"/>
+    </property>
+    <property name="whatsThis">
+     <string comment="输入需要爬取的网站URL"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>140</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>网站URL:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="previewbt">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>180</y>
+      <width>241</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>预览网页(打开一个游览器窗口)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="beginbt">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>250</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe Arabic</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>开始爬取</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="setting">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>290</y>
+      <width>451</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>高级设置</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Adobe Arabic</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>爬取模式：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="mode_choose">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>30</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>BeautifulSoup 爬取网站正文 (默认)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Newspaper AI智能识别正文</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>440</y>
+      <width>451</width>
+      <height>161</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="previewgroup">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>20</y>
+      <width>581</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>词云图预览:</string>
+    </property>
+    <widget class="QWidget" name="picturebox" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>561</width>
+       <height>511</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>561</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>10</y>
+      <width>20</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scfliebt">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>260</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择本地文件</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1160</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
