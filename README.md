@@ -20,8 +20,3 @@ UI使用 `PyQt5` 设计实现, `BeautifulSoup` + `Newspaper` 双模爬虫引擎,
 ```
 ---
 当前版本 1.2  
-
-有问题可反馈 Issues 或 发邮 `gyj2006@foxmail.com`
-
-By Codeboy 官咏颉  
-2020/4/8
